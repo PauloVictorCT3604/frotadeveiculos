@@ -1,0 +1,29 @@
+{
+    "veiculos": [
+        {
+            "id": "V1",
+            "modelo": "Caminh\u00e3o",
+            "categoria": "SP",
+            "placa": "ABC-1234",
+            "status": "Disponivel",
+            "trabalhando": false
+        },
+        {
+            "id": "V2",
+            "modelo": "Caminh\u00e3o",
+            "categoria": "SP",
+            "placa": "ABC-1239",
+            "status": "Disponivel",
+            "trabalhando": false
+        },
+        {
+            "id": "V3",
+            "modelo": "Caminh\u00e3o",
+            "categoria": "SP",
+            "placa": "ABC-9239",
+            "status": "Disponivel",
+            "trabalhando": false
+        }
+    ],
+    "servicos": []
+}

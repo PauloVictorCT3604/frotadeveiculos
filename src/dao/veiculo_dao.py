@@ -25,11 +25,19 @@ class VeiculoDAO:
         self.salvar_dados()
         return veiculo
 
+    def buscar_veiculo_por_placa(self, veiculo_placa: str) -> Optional[Veiculo]:
+        for veiculo_data in self.db["veiculos"]:
+            if veiculo_data["placa"] == veiculo_placa:
+                return Veiculo(**veiculo_data)
+        return None
+
+    
     def buscar_veiculo_por_id(self, veiculo_id: str) -> Optional[Veiculo]:
         for veiculo_data in self.db["veiculos"]:
             if veiculo_data["id"] == veiculo_id:
                 return Veiculo(**veiculo_data)
         return None
+    
 
     def atualizar_status_veiculo(self, veiculo_id: str, trabalhando: bool) -> Optional[Veiculo]:
         for veiculo_data in self.db["veiculos"]:
